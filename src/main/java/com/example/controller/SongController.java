@@ -23,6 +23,11 @@ public class SongController {
 	@Autowired
 	SongRepository songrepo;
 	
+	@GetMapping("/hellonew")
+	public String hellonew() {
+		return "hellonew";
+	}
+	
 	@PostMapping("/createsong")
 	public SongData songinput(@RequestBody SongData sd) throws Exception {
 		SongData newsong = new SongData(sd.getSingername(), sd.getAlbum(), sd.getSongname(), sd.getFilename());

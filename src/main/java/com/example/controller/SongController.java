@@ -25,7 +25,7 @@ public class SongController {
 	
 	@GetMapping("/hellonew")
 	public String hellonew() {
-		return "hellonewsecond";
+		return "hellonewadmin";
 	}
 	
 	@PostMapping("/createsong")
